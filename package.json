@@ -1,0 +1,66 @@
+{
+  "name": "taxifx",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "postinstall": "react-native link",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "ios": "react-native run-ios",
+    "android": "react-native run-android",
+    "test": "jest",
+    "lint": "tslint -c tslint.json 'app/**/*.{ts,tsx}'",
+    "lint-fix": "tslint -c tslint.json --fix 'app/**/*.{ts,tsx}'"
+  },
+  "dependencies": {
+    "babel-core": "latest",
+    "native-base": "^2.7.2",
+    "react": "16.4.1",
+    "react-native": "0.56.0",
+    "react-redux": "5.0.5",
+    "redux": "3.7.0",
+    "redux-persist": "^5.10.0",
+    "redux-persist-fs-storage": "^1.2.2",
+    "redux-saga": "0.16.0"
+  },
+  "devDependencies": {
+    "@types/jest": "latest",
+    "@types/react": "latest",
+    "@types/react-native": "latest",
+    "@types/react-redux": "^6.0.5",
+    "@types/react-test-renderer": "latest",
+    "@types/redux": "^3.6.0",
+    "@types/redux-logger": "^3.0.6",
+    "@types/remote-redux-devtools": "^0.5.3",
+    "babel-jest": "23.4.2",
+    "babel-preset-react-native": "^5",
+    "jest": "23.4.2",
+    "react-devtools": "^3.2.3",
+    "react-native-typescript-transformer": "latest",
+    "react-test-renderer": "16.4.1",
+    "redux-devtools": "^3.4.1",
+    "redux-logger": "^3.0.6",
+    "remote-redux-devtools": "^0.5.12",
+    "ts-jest": "latest",
+    "tslint": "latest",
+    "tslint-react": "^3.6.0",
+    "typescript": "latest"
+  },
+  "jest": {
+    "preset": "react-native",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "modulePaths": [
+      "<rootDir>"
+    ]
+  }
+}
